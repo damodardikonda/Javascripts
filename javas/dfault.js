@@ -1,0 +1,1 @@
+document.write("This is another java script program");
