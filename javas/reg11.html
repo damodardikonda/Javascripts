@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Validity using E00 </title>
+        <script type='text/javascript'>
+
+                  function validate(){
+                       var username=document.getElementById('username').value;
+                        var reg=/E00/i; //it is an object of reg expn not a variable.i is for case insensitive
+                        if(reg.test(username)){
+                            alert("valid username")
+                        }
+                        else{
+                            alert('invalid username')
+
+                            //button type submit means next page allowed
+                        }
+                  }
+
+
+           </script> 
+
+           </head>
+           <body>
+
+               <form  action='hello.html'>
+
+
+                   <input id="username" placeholder='username' input type="text"/><br>
+                   <button onclick='validate()' , type='submit'>submit</button>
+
+                   </form>
+                   </body>
+                   </html>

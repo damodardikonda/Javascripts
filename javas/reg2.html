@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Validity using E00 </title>
+        <script type='text/javascript'>
+
+                  function validate(){
+                       var username=document.getElementById('username').value;
+                      // regg=new RegExp('E00',i)//it is an constructor  of class RegExp.E00 is for word and i for case sensitiv which is optional
+                        var reg=/[sdp]imple/i; //it is an object of reg expn not a variable.i is for case insensitive
+                        // var reg=/[a-z]00[6-9]c[0-2]/i ; it is an range of a to then 00 then 6-9 then c then 0-2
+                        //here imple is compulsory but you can use s,d,p to first character.
+                        //var reg=/[^1abc]hjh/ not start with or orb or c..exclude
+                        if(reg.test(username)){
+                            alert("valid username")
+                        }
+                        else{
+                            alert('invalid username')
+
+                            //button type submit means next page allowed
+                        }
+                  }
+
+
+           </script> 
+
+           </head>
+           <body>
+
+               <form  action='hello.html'>
+
+
+                   <input id="username" placeholder='username' input type="text"/><br>
+                   <button onclick='validate()' , type='submit'>submit</button>
+
+                   </form>
+                   </body>
+                   </html>
