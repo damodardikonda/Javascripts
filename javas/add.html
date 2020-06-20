@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title> This is Addition </title>
+    <script type='text/javascript'>
+  
+               function add(){
+
+                var a= document.getElementById('t1').value;
+                var b= document.getElementById('t2').value;
+
+            document.getElementById('b1').innerHTML="Result"+(a+b)
+            
+            //console.log(a+b). it is an DOM object.. It gives all access to window
+            }
+
+
+</script>
+
+</head>
+<body>
+
+    <input type='text' placeholder="type1" input id="t1"/>
+    <br><br>
+
+     <input type='text' placeholder="type2" input id="t2"/>
+    <br>
+    <br>
+
+    <button onclick="add()" id='b1' >Add</button>
+
+    <h2 id='op' > Result=</h2>
+</body>
+    </html>

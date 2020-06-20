@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title> This is Addition </title>
+    <script type='text/javascript'>
+      
+
+      var ID=0;
+      var second=0;
+        function printMsg(){
+           // document.getElementById('op').innerHTML='5 second is passed'
+           document.getElementById('op').innerHTML=second+'second'
+        }
+
+        function start(){
+           //ID=window.setTimeout(printMsg,5000)
+            ID=window.setInterval(printMsg,1000)// it will print after 1 second continuosely
+            second++;
+            // setTimeout is an windows function
+            //printMsg is an function which we want to execute. here we are referencing that function not calling printMsg 
+            // 5000=it is an time in milisecond
+            //it function will print safter 5 second ="5 second is passed"
+            // IDis used for cleartimeout()
+    
+        }
+
+        function stop(){
+           //window.clearTimeout(ID)
+           window.clearInterval(ID)          // it stop the setInterval
+           //ID = it is an unique id of 
+    
+        }
+               
+
+
+</script>
+
+</head>
+<body>
+
+   
+
+    
+
+    <button onclick="start()" id='b1' >Start</button>
+   <br><br>
+    <h2 id='op' > Some Text </h2>
+
+    <button onclick="Stop()" id='b1' >Stop
+    </button>
+    
+
+
+
+</body>
+    </html>
