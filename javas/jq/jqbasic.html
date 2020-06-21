@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Jquery Basic </title>
+    </head>
+
+    <body>
+        <h2 id="heading2 ">Trying to change this</h2>
+        <button onclick="fun1()" id="btn1"> Click Me</button>
+
+    </body>
+
+    <script src='jquery.js'>          </script>
+    <script>
+
+      function fun1(){
+       <!-- #- id is denoted by #
+        . - class is denoted by dot -->
+     
+          $("#heading2").fadeToggle(2000);// fadeToggle is used for FadeIn and fadeOut and 2000 is millisecond
+
+      }
+
+
+    </script>    
+
+    </html>

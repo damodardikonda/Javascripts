@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Jquery Basic </title>
+
+        <link rel="stylesheet" href="style.css">
+
+        
+
+    </head>
+
+    <body>
+        <h2 class="cls" id="heading1 ">Selectors in Jquery</h2>
+        <h2 class="cls" id="heading2 ">Selectors in Jquery</h2>
+        <h2 id="heading3 ">Selectors in Jquery</h2>
+   
+
+        <div class="cls">
+           <p>this is param</p>
+           </div>
+        <button onclick="fun1()" id="btn1"> Click Me</button>
+
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script>
+
+      function fun1(){
+       // #- id is denoted by #
+        //class is denoted by 'dot' 
+     
+          //$("") inside quotes you would specify the id or class etc.
+          //$("h2") this is equal to document.getElementById()
+          //$ is an sign of jquery
+         $("h2").fadeToggle()
+         // if we want to access the class :- $(".cls").fadeToggle(); and note that div also haas an same class so it will also faded. 
+      }
+
+
+    </script>    
+
+    </html>

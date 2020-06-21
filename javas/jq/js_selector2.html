@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title> Jquery Basic </title>
+
+        <link rel="stylesheet" href="style1.css">
+
+       
+
+    </head>
+
+    <body>
+        <div> This is Outside paragraph</div>
+
+
+        <div  id ="id1" class="cls">
+           <p>this is first param of first div</p>
+           <p>this is second param of second div</p>
+           </div>
+
+           <div id ="id2" class="cls">
+            <p>this is first param of second div</p>
+            </div>
+           
+           
+            <div id ="id3" class="cls">
+            <ul>
+                <li> item 1</li>
+                <li> item 2</li>
+                <li> item 3</li>
+                <li> item 4</li>
+                </ul>
+                </div>
+        <button onclick="fun1()" id="btn1"> Click Me</button>
+
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script>
+
+      function fun1(){
+       // #- id is denoted by #
+        //class is denoted by 'dot' 
+
+        //$("#id1,#id2").fadeToggle(1000); // it will hidefirst 2 division
+//        $('#id1,p').fadeToggle(1000) it will only hide paragraph of second div
+
+               $('#id1, p, li').fadeToggle(1000)
+                
+             //   $("div > p").fadeToggle(1000) if we want to hide only paragraph and not his div . it shows that div is a parent of p and only hide p of div  
+
+                //$("p:")// it will hide only first paragraph
+
+
+                //$(".cls : even").fadeToggle(1000) it wil hide only even number of division
+                 //$(".li : even").fadeToggle(1000) it wil hide only even number of list
+    </script>    
+
+    </html>
