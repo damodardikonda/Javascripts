@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title> Jquery Basic </title>
+
+        <link rel="stylesheet" href="style1.css">
+
+       
+
+    </head>
+
+    <body>
+        <div> This is Outside paragraph</div>
+
+
+        <div  id ="id1" class="cls">
+           <p>this is first param of first div</p>
+           <p>this is second param of second div</p>
+           </div>
+
+           <div id ="id2" class="cls">
+            <p>this is first param of second div</p>
+            </div>
+           
+           
+            <div id ="id3" class="cls">
+            <ul>
+                <li> item 1</li>
+                <li> item 2</li>
+                <li> item 3</li>
+                <li> item 4</li>
+                </ul>
+                </div>
+        <button  id="btn1"> Click Me</button>
+
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script>
+
+     // if you want to work a button after whole page is loaded 
+    $("document").ready(function(){
+
+
+
+        $("button").click(fun1); // it will replace onclick event 
+    // $('#btn1').click(fun1) it will only work for perticular id 
+
+          function fun1(){
+  
+          $('#id1, p, li').fadeToggle(1000)
+
+        }
+
+
+
+
+
+
+
+    });  // ready function is called when entire document was loaded
+
+
+                
+           
+    </script>    
+
+    </html>

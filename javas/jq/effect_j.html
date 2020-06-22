@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title> Jquery Basic </title>
+
+        <link rel="stylesheet" href="style1.css">
+
+       <h1> Event in Jquery</h1>
+
+    </head>
+
+    <body>
+        <div> This is Outside paragraph</div>
+
+
+        <div  id ="id1" class="cls">
+           <p>this is first param of first div</p>
+           <p>this is second param of second div</p>
+           </div>
+
+           <div id ="id2" class="cls">
+            <p>this is first param of second div</p>
+            </div>
+           
+           
+            <div id ="id3" class="cls">
+            <ul>
+                <li> item 1</li>
+                <li> item 2</li>
+                <li> item 3</li>
+                <li> item 4</li>
+                </ul>
+                </div>
+        <button  id="btn1"> Click Me 1</button>
+        <button  id="btn2"> Click Me 2</button>
+        <button  id="btn3"> Click Me 3</button>
+
+
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script>
+
+     // if you want to work a button after whole page is loaded 
+    $(document).ready(function(){
+
+
+          //$("btn1").click(function(){
+
+            //  $("#id1").hide(); // it will hide the button after clicking the button
+          //});
+
+         
+          //$("btn2").click(function(){
+
+           //         $("#id1").show(); // it will show the button after clicking the button
+                  
+             //     });
+
+        // $("btn3").click(function(){
+
+          //         $("#id1").toggle(); // it will show the button if it was hide and vise versa.. combination of show and hide
+            //      });
+
+
+
+
+
+
+
+
+
+        //  $("btn1").click(function(){
+
+          //    $("#id1").fadeOut(200); // it will hide the button after clicking the button
+          //});
+
+          //$("btn2").click(function(){
+
+            //  $("#id1").fadeIn("fast"); // it will show the button after clicking the button
+
+            //});
+
+
+            //$("btn3").click(function(){
+
+//$("#id1").fadeToggle("slow"); // it will show the button if it was hide and vise versa.. combination of show and hide
+//});
+
+           
+
+
+       $("btn1").click(function(){
+
+                  $("#id1").slideUp(200); // it will hide the button after clicking the button
+       });
+
+        $("btn2").click(function(){
+
+                  $("#id1").slideDown("fast"); // it will show the button after clicking the button
+
+        });
+
+
+        $("btn3").click(function(){
+
+                    $("#id1").slideToggle("slow"); // it will show the button if it was hide and vise versa.. combination of show and hide
+          });
+
+
+    });
+     
+                
+           
+    </script>    
+
+    </html>

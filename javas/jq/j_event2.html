@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title> Jquery Basic </title>
+
+        <link rel="stylesheet" href="style1.css">
+
+       
+
+    </head>
+
+    <body>
+        <div> This is Outside paragraph</div>
+
+
+        <div  id ="id1" class="cls">
+           <p>this is first param of first div</p>
+           <p>this is second param of second div</p>
+           </div>
+
+           <div id ="id2" class="cls">
+            <p>this is first param of second div</p>
+            </div>
+           
+           
+            <div id ="id3" class="cls">
+            <ul>
+                <li> item 1</li>
+                <li> item 2</li>
+                <li> item 3</li>
+                <li> item 4</li>
+                </ul>
+                </div>
+        <button  id="btn1"> Click Me 1</button>
+        <button  id="btn2"> Click Me 2</button>
+
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script>
+
+     // if you want to work a button after whole page is loaded 
+  
+     $("document").ready(function(){
+
+     //$("#btn1").dblclick(fun1); // it will work on Double click
+
+     $("#btn1").mouseenter(fun3);// same as onmouseevent in javacript
+     $("#btn1").mouseleave(fun2);// same as onmouse out in js
+     $("#btn1").hover(fun1,fun2);//it is combination of mouseenter and mouseleave, fun1 is for mouseenter and fun2 for mouseleave
+
+
+
+
+     function fun1(){
+
+         $("#id3").fadeToggle(1000);
+     }
+
+     function fun2(){
+
+$("#id3").fadeOut(1000);
+}
+
+function fun3(){
+
+$("#id3").fadeIn(1000);
+}
+
+
+
+
+     })
+
+                
+           
+    </script>    
+
+    </html>

@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title> callback Basic </title>
+
+        <link rel="stylesheet" href="style1.css">
+
+       <h1> Event in Jquery</h1>
+
+    </head>
+
+    <body>
+        <div> This is Outside paragraph</div>
+
+
+        <div  id ="id1" class="cls">
+           <p>this is first param of first div</p>
+           <p>this is second param of second div</p>
+           </div>
+
+           <div id ="id2" class="cls">
+            <p>this is first param of second div</p>
+            </div>
+           
+           
+            <div id ="id3" class="cls">
+            <ul>
+                <li> item 1</li>
+                <li> item 2</li>
+                <li> item 3</li>
+                <li> item 4</li>
+                </ul>
+                </div>
+       
+        <button  id="btn3"> Toggle </button>
+
+
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script>
+
+     // if you want to work a button after whole page is loaded 
+    $(document).ready(function(){
+
+            $("btn3").click(function(){
+
+
+         //  $("#id1").fadeToggle(3000,function(){
+         
+           // alert("run after fadtoggle method")//now this will print after 5 seconds of fadetoggle method
+
+           //})
+            
+
+            document.write("another way to callback is")
+
+
+            function printmsg(){
+
+                alert("this will print after slide")
+
+            }
+
+            $("btn3").click(function(){
+
+            //$("#id1").slideToggle(3000,printmsg)
+            $("#id1").slideUp(2000).slideDown(2000).fadeOut(3000).fadeIn(3000)
+            }
+       
+
+      
+
+
+
+            })
+
+    });
+     
+                
+           
+    </script>    
+
+    </html>

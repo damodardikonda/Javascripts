@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> Jquery DOM Basic </title>
+
+        <link rel="stylesheet" href="style1.css">
+
+       <h1> Jquery DOM Manipulation</h1>
+
+    </head>
+
+    <body>
+        
+
+       
+
+           <div id ="id2" class="cls">
+            <p id=para value="Hello World">Here We Are Going To Perform <b>Jquery DOM Manipulation</b></p>
+            </div>
+           
+                      <button  id="btn3"> Action </button>
+
+
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script>
+
+     // if you want to work a button after whole page is loaded 
+    $(document).ready(function(){
+
+          $("#btn3").click(function(){
+
+
+                //text() method 
+                alert($("#para").text());// it will print the paragraph of p id...// this is getter
+                alert($("#para").text("hi this is an getter"));//hi this is an getter...it will replace whole test to "hi this is an getter"
+                 //output:- Here We Are Going To Perform Jquery DOM Manipulation
+
+
+           //html() method
+           alert($("#para").html());//it wil return with an html tag ..
+           // output :-Here We Are Going To Perform <b>Jquery DOM Manipulation</b>
+           alert($("#para").html(" Perform <b>Jquery DOM Manipulation</b>"));//replace by  " Perform <b>Jquery DOM Manipulation</b>"
+
+
+          // attr()
+          alert($("#para").attr("value"))
+
+        // css()
+        alert($("#para").css("color"))
+        alert($("#para").css("font_family"))
+        alert($("#para").css("font_size"))
+
+        alert($("#id2").css("font-size"))
+          })
+
+    });
+     
+                
+           
+    </script>    
+
+    </html>
