@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title> Tool Tips Basic </title>
+
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+
+      
+
+       <div  id="tools">
+        <h1> Tool Tips in java</h1>
+       <img src="logo1111" id="img" width=200 title="Damodar">
+    </div>
+
+    </head>
+
+    <body>
+        
+
+       
+
+          
+           
+                 
+    
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script src='jqueryui/jquery-ui.js'>  </script>
+    <script>
+
+     // if you want to work a button after whole page is loaded 
+    $(document).ready(function(){
+
+        // 'show' is for "fade in" and 'hide' is for "fade out"
+        
+      $("img").tooltip({
+          //track:true,  //it will track the name
+          content:"Who is the Best",
+          //show:{effect:'bounce', duration:4000},// this shows bounce effect for 4sec
+         // show:{effect:'pulsate', duration:4000},
+          //show:{effect:'highlight', duration:4000},
+          show:{effect:'explode', duration:1000},
+          hide:{effect:'blind', duration:1000}
+      });
+    });
+     
+                
+           
+    </script>    
+</html>

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title> Jquery_UI Basic </title>
+
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+
+      <!--  append() - Inserts content at the end of the selected elements
+prepend() - Inserts content at the beginning of the selected elements
+after() - Inserts content after the selected elements
+before() - Inserts content before the selected elements   
+remove() - Removes the selected element (and its child elements)
+empty() - Removes the child elements from the selected elements-->
+
+       <h1> Jquery DOM Manipulation</h1>
+
+    </head>
+
+    <body>
+        
+
+       
+
+          
+           
+                     
+
+                      <div id ="id2" class="myclass">
+                        <p id=para value="Hello World">Here We Are Going To Perform <b>Jquery DOM Manipulation</b></p>
+                        </div>
+                  
+                        <input type="text" placeholder="select a date" id="dateinput">
+    
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script src='jqueryui/jquery-ui.js'>  </script>
+    <script>
+
+     // if you want to work a button after whole page is loaded 
+    $(document).ready(function(){
+
+        
+        $("#dateinput").datepicker({  //it will creatwon text box
+             
+              numberOfMonths:1, // it will show number of month
+              changeYear:true, //drop down to year
+              changeMonth:true,  // drop down to month
+              showWeek:true,     // it will show the no of week
+              weekHeader:"WK No",  // it will change the header of week
+              showOtherMonths:true,
+              minDate: new Date(2018,0,5),
+              maxDate:  new Date(2020,7,1)
+              
+        });
+//$("#id2").datepicker(); it will create calender on div
+    });
+     
+                
+           
+    </script>    
+</html>
