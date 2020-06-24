@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Autocomplete Box Widget </title>
+
+        <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+
+      
+
+    </head>
+
+    <body>
+
+        <h2> Draggable Interaction in JQueryUI </h2>
+
+      <div style  = "border: 2px solid red;">
+        
+        <div id="d1" class="division">
+            <h3>
+                Cube 1
+            </h3>
+        </div>
+
+        <div id="d2" class="division">
+            <h3>
+                Cube 2
+            </h3>
+        </div>
+      </div>
+
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script src='jqueryui/jquery-ui.js'>  </script>
+    <script>
+
+       $(".division").draggable({
+           axis:y,// only onup and down
+           containment:"parent",// it does not go outside the dvision
+           cursor:"grabbing",
+       });                
+           
+    </script>    
+</html>

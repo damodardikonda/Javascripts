@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Autocomplete Box Widget </title>
+
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+
+      
+
+    </div>
+
+    </head>
+
+    <body>
+
+        <h2> Message Box in JQuery </h2>
+
+      
+
+        <div id="id2" title="Msg" class="class1">      
+       <h3>Enter The City Name</h3>
+      <input type="text" id="id2" placeholder="city">
+       <br><br>
+        </div>
+ 
+        <div id="panels">
+            
+
+            <h3>Java</h3>
+            <p>Our core Java programming tutorial is designed for students
+             and working professionals. Java is an object-oriented, class-based,
+              concurrent, secured and general-purpose computer-programming language.
+               It is a widely used robust technology.</p>
+    
+               <h3>Pyton</h3>
+               <p>Python is a general purpose, dynamic, high-level, and interpreted 
+                   programming language. It supports Object Oriented programming approach
+                    to develop applications. It is simple and easy to learn and provides 
+                    lots of high-level data structures.
+    
+                Python is easy to learn yet powerful and versatile scripting language, 
+                which makes it attractive for Application Development..</p>
+    
+                  <h3>JavaScript</h3>
+                  <p>ur JavaScript Tutorial is designed for beginners and professionals both.
+                       JavaScript is used to create client-side dynamic pages.
+    
+                    JavaScript is an object-based scripting language which is lightweight and cross-platform..</p>
+          
+       
+           
+            </div>
+      
+       <button id="btn2" > Click Me</button> 
+   
+      
+          
+           
+                 
+    
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script src='jqueryui/jquery-ui.js'>  </script>
+    <script>
+
+  $(document).ready(function(){
+        var aaa=[Pune,mumbai,akola,aklus,bhose,shirdi,alandi,satara,sangli,panjit,punjab,putan,delhi,dehadun,asam,kashmir]
+
+    $("#id2").autocomplete({
+        source:aaa
+    },
+    {
+       autofocus:true,//first will be alwys on focus
+       delay:0,
+       minlength:2// after typing 2 letter suggession should come..
+    })
+
+         
+
+            $("#panels").accordion({
+             collapsible:true,  // it shrinks also
+             event:'mouseover',
+             animate:300,
+             active:2,//bydefault open 3rd..
+             heightStyle:true,
+             icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+         });
+
+     // Setter Methods
+    $("#id2").autocomplete("option","dragged",true);
+
+    // Getter Methods
+    var active_letter=$("#panels").accordion("option","active");
+    alert(active_letter);
+})      
+    </script>    
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Autocomplete Box Widget </title>
+
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+
+      
+
+    </div>
+
+    </head>
+
+    <body>
+
+        <h2> Message Box in JQuery </h2>
+
+      
+
+        <div id="id2" title="Msg" class="class1">      
+       <h3>Enter The City Name</h3>
+      <input type="text" id="id2" placeholder="city">
+       <br><br>
+       
+      
+         
+   
+      
+          
+           
+                 
+    
+    </body>
+
+    <script src='jq/jquery.js'>  </script>
+    <script src='jqueryui/jquery-ui.js'>  </script>
+    <script>
+
+        var aaa=[Pune,mumbai,akola,aklus,bhose,shirdi,alandi,satara,sangli,panjit,punjab,putan,delhi,dehadun,asam,kashmir]
+
+    $("#id2").autocomplete({
+        source:aaa
+    },
+    {
+       autofocus:true,//first will be alwys on focus
+       delay:0,
+       minlength:2// after typing 2 letter suggession should come..
+    })
+                
+           
+    </script>    
+</html>
